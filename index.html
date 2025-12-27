@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkatesh B. Nilelu | Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Smooth Scroll -->
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
+    <div class="container-fluid">
+
+        <a class="navbar-brand fw-bold text-primary" href="#">Venkiiii.dev</a>
+
+        <!-- DESKTOP THEME TOGGLE -->
+        <div id="themeToggle" class="theme-switch d-none d-lg-flex align-items-center ms-3">
+            <i class="fas fa-sun sun"></i>
+            <i class="fas fa-moon moon"></i>
+            <span class="ball"></span>
+        </div>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 align-items-center">
+
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+
+                <!-- DOWNLOAD RESUME -->
+                <li class="nav-item">
+                    <a href="assets/resume/myresume.png" class="btn btn-primary px-3 py-1" download>
+                        Download Resume
+                    </a>
+                </li>
+
+                <!-- MOBILE THEME TOGGLE -->
+                <li class="nav-item d-lg-none">
+                    <div id="themeToggleMobile" class="theme-switch mt-2">
+                        <i class="fas fa-sun sun"></i>
+                        <i class="fas fa-moon moon"></i>
+                        <span class="ball"></span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="py-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+                <h5 class="text-muted">Hello, I'm</h5>
+                <h1 class="fw-bold text-primary">Venkatesh B. Nilelu</h1>
+
+                <p class="text-dark">
+                    B-Tech 3rd year in IT branch from GH Raisoni College of Engineering and Management (SPPU)
+                </p>
+
+                <h5 class="typing-text text-warning fw-semibold"></h5>
+
+                <div class="mt-4">
+                    <a href="#projects" class="btn btn-primary px-4 me-2">View Projects</a>
+                    <a href="assets/resume/myresume.png" class="btn btn-outline-primary px-4" download>Download Resume</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 text-center">
+                <img src="assets/images/photo.png" alt="Portfolio Photo"
+                     class="img-fluid rounded-circle shadow-lg border border-3 border-warning"
+                     style="width: 300px; height: 300px; object-fit: cover;">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="fw-bold text-primary mb-3">About Me</h2>
+        <p class="lead">
+            I am a B-Tech IT student passionate about web development. I love creating responsive, user-friendly,
+            and modern websites. I enjoy learning new technologies and improving my skills daily.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="fw-bold text-primary text-center mb-4">Skills</h2>
+
+        <div class="row g-4">
+            <!-- Skill Cards (unchanged layout, improved structure) -->
+            <!-- ... SAME CARDS, NO UI CHANGES ... -->
+            <!-- Keeping as-is; only cleaned in final code -->
+            <!-- 1 -->
+            <div class="col-md-4">
+                <div class="skill-card p-3 shadow-sm rounded-3">
+                    <h5 class="text-primary">Programming Languages</h5>
+                    <ul>
+                        <li>C</li><li>C++</li><li>Java</li><li>JavaScript (Basics)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="col-md-4">
+                <div class="skill-card p-3 shadow-sm rounded-3">
+                    <h5 class="text-primary">Web Development</h5>
+                    <ul>
+                        <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Bootstrap</li>
+                        <li>Tailwind CSS</li><li>React</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-md-4">
+                <div class="skill-card p-3 shadow-sm rounded-3">
+                    <h5 class="text-primary">Backend</h5>
+                    <ul>
+                        <li>Node.js</li><li>Express.js</li><li>Java Spring Boot</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="col-md-4">
+                <div class="skill-card p-3 shadow-sm rounded-3">
+                    <h5 class="text-primary">Databases</h5>
+                    <ul>
+                        <li>SQL</li><li>MySQL</li><li>Firebase</li><li>Supabase</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="col-md-4">
+                <div class="skill-card p-3 shadow-sm rounded-3">
+                    <h5 class="text-primary">Tools</h5>
+                    <ul>
+                        <li>VS Code</li><li>Git</li><li>GitHub</li><li>Figma</li>
+                        <li>Canva</li><li>Netlify</li><li>Vercel</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="col-md-4">
+                <div class="skill-card p-3 shadow-sm rounded-3">
+                    <h5 class="text-primary">Soft Skills</h5>
+                    <ul>
+                        <li>Communication</li><li>Teamwork</li>
+                        <li>Leadership</li><li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="fw-bold text-primary mb-4">Projects</h2>
+
+        <div class="row g-4">
+
+            <!-- Project 1 -->
+            <div class="col-md-6">
+                <div class="project-card shadow rounded-3 d-flex">
+
+                    <div class="project-img">
+                        <img src="assets/images/aidoctor.webp" alt="AI Doctor Project"
+                             class="project-thumbnail">
+                    </div>
+
+                    <div class="project-info">
+                        <h4>AI Doctor</h4>
+                        <p>An AI system that analyzes symptoms and gives suggestions.</p>
+                        <p><strong>Technologies:</strong> HTML, CSS, JS, Express, Supabase.</p>
+                        <a href="https://ai-doctor-s75m.onrender.com/" target="_blank"
+                           class="btn btn-primary mt-2">View</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-6">
+                <div class="project-card shadow rounded-3 d-flex">
+
+                    <div class="project-img">
+                        <img src="assets/images/pestcontrol.jpg" alt="Pest Control Project"
+                             class="project-thumbnail">
+                    </div>
+
+                    <div class="project-info">
+                        <h4>Pest Control Website</h4>
+                        <p>Professional website with WhatsApp message booking.</p>
+                        <p><strong>Technologies:</strong> HTML, CSS, JS.</p>
+                        <a href="https://jagdambapestcontrolpune.netlify.app/"
+                           target="_blank" class="btn btn-primary mt-2">View</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS SLIDER -->
+<section id="achievements" class="py-5">
+    <div class="container">
+        <h2 class="fw-bold text-primary mb-4 text-center">Achievements & Certificates</h2>
+
+        <div class="slider">
+            <div class="slide-track">
+
+                <!-- 6 original slides -->
+                <div class="slide"><img src="assets/certificates/c1.jpg" class="cert-img" alt="Certificate 1"></div>
+                <div class="slide"><img src="assets/certificates/c2.jpg" class="cert-img" alt="Certificate 2"></div>
+                <div class="slide"><img src="assets/certificates/c3.jpg" class="cert-img" alt="Certificate 3"></div>
+                <div class="slide"><img src="assets/certificates/c4.jpg" class="cert-img" alt="Certificate 4"></div>
+                <div class="slide"><img src="assets/certificates/c5.jpg" class="cert-img" alt="Certificate 5"></div>
+                <div class="slide"><img src="assets/certificates/c6.jpg" class="cert-img" alt="Certificate 6"></div>
+
+                <!-- Duplicate 6 for infinite loop -->
+                <div class="slide"><img src="assets/certificates/c1.jpg" class="cert-img"></div>
+                <div class="slide"><img src="assets/certificates/c2.jpg" class="cert-img"></div>
+                <div class="slide"><img src="assets/certificates/c3.jpg" class="cert-img"></div>
+                <div class="slide"><img src="assets/certificates/c4.jpg" class="cert-img"></div>
+                <div class="slide"><img src="assets/certificates/c5.jpg" class="cert-img"></div>
+                <div class="slide"><img src="assets/certificates/c6.jpg" class="cert-img"></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- IMAGE POPUP -->
+<div class="image-popup" id="imagePopup">
+    <span class="close-popup">&times;</span>
+    <img id="popupImage" src="" alt="Certificate Preview">
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+    <div class="container">
+
+        <div class="contact-outer-box shadow-lg p-4 p-md-5 rounded-4">
+
+            <h2 class="fw-bold text-primary mb-4 text-center">Contact</h2>
+
+            <div class="row g-4">
+
+                <!-- CONTACT FORM -->
+                <div class="col-md-6">
+                    <div class="inner-box p-4 shadow rounded-3">
+
+                        <h4 class="fw-bold text-primary mb-3">Send a Message</h4>
+
+                        <form id="contactForm">
+                            <input type="text" class="form-control mb-3" placeholder="Name" required>
+                            <input type="email" class="form-control mb-3" placeholder="Email" required>
+                            <textarea class="form-control mb-3" rows="5" placeholder="Message" required></textarea>
+
+                            <button type="submit" class="btn btn-primary px-4 w-100">Send</button>
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- CONTACT LINKS -->
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-3 text-primary">Contact Links</h5>
+
+                    <div class="contact-link-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:venkateshnilelu@gmail.com">venkateshnilelu@gmail.com</a>
+                    </div>
+
+                    <div class="contact-link-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/VenkateshNilelu" target="_blank">
+                            github.com/VenkateshNilelu
+                        </a>
+                    </div>
+
+                    <div class="contact-link-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/venkatesh-nilelu" target="_blank">
+                            linkedin.com/in/venkatesh-nilelu
+                        </a>
+                    </div>
+
+                    <div class="contact-image-wrapper">
+                        <img src="assets/images/contact.png" alt="Contact Illustration" class="contact-image">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- GO TO TOP -->
+<button id="goTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+<!-- FOOTER -->
+<footer class="text-center py-3">
+    © 2025 Venkatesh B. Nilelu. All rights reserved.
+</footer>
+
+<!-- JS FILES -->
+<script src="script.js"></script>
+<script src="typing.js"></script>
+
+</body>
+</html>

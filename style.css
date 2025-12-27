@@ -1,0 +1,545 @@
+/* ======================================
+   GLOBAL
+====================================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E7E4DF;
+    color: #1A1A1A;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #0A0A0F;
+    color: #E7E4DF;
+}
+
+/* Cursor */
+.cursor {
+    color: #F4C430;
+    font-weight: bold;
+}
+
+/* ======================================
+   NAVBAR
+====================================== */
+
+.navbar {
+    background-color: #F0F4FA !important;
+    transition: 0.3s ease;
+    padding: 0 20px !important;
+}
+
+.dark-mode .navbar {
+    background-color: #111827 !important;
+}
+
+.navbar-brand {
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #0A2647 !important;
+}
+
+.dark-mode .navbar-brand {
+    color: #F4C430 !important;
+}
+
+.navbar-nav {
+    margin-left: auto !important;
+    gap: 20px;
+}
+
+.nav-link {
+    position: relative;
+    font-weight: 500;
+    color: #333 !important;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #0A2647 !important;
+}
+
+.dark-mode .nav-link {
+    color: #D1D5DB !important;
+}
+
+.dark-mode .nav-link:hover {
+    color: #F4C430 !important;
+}
+
+/* underline */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: #F4C430;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+/* ======================================
+   THEME TOGGLE BUTTON (FIXED)
+====================================== */
+
+.theme-switch {
+    width: 70px;
+    height: 32px;
+    border-radius: 40px;
+    background: #0A2647;
+    border: 2px solid #0A2647;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+}
+
+/* Sun & Moon ICONS – ALWAYS VISIBLE */
+.theme-switch .sun,
+.theme-switch .moon {
+    position: absolute;
+    font-size: 15px;
+    z-index: 5;         /* stay above the ball */
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.theme-switch .sun {
+    left: 10px;
+    color: #F4C430;     /* gold */
+    opacity: 1;
+}
+
+.theme-switch .moon {
+    right: 10px;
+    color: #E7E4DF;
+    opacity: 0;
+}
+
+/* Slide Ball */
+.theme-switch .ball {
+    width: 26px;
+    height: 26px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    transition: 0.4s ease;
+    z-index: 3;
+}
+
+/* Move ball when active */
+.theme-switch.active .ball {
+    transform: translateX(38px);
+}
+
+/* DARK MODE OVERRIDES */
+.dark-mode .theme-switch {
+    background: #1F2937;
+    border-color: #4CC9F0;
+}
+
+.dark-mode .sun {
+    opacity: 0;
+}
+
+.dark-mode .moon {
+    opacity: 1;
+}
+
+.dark-mode .ball {
+    background: #0A0F1A;
+    box-shadow: 0 0 10px #4CC9F0;
+}
+
+
+/* ======================================
+   HERO SECTION
+====================================== */
+
+#home {
+    background-color: #E7E4DF;
+}
+
+.dark-mode #home {
+    background-color: #111827;
+}
+
+/* Make small texts white */
+.dark-mode .text-muted,
+.dark-mode .text-dark {
+    color: #ffffff !important;
+}
+
+/* ======================================
+   ABOUT
+====================================== */
+
+#about {
+    background-color: #F0F4FA;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.dark-mode #about {
+    background-color: #1F2937;
+}
+
+/* ======================================
+   SKILLS
+====================================== */
+
+#skills {
+    background-color: #D8E3EB;
+}
+
+.dark-mode #skills {
+    background-color: #0F172A;
+}
+
+/* Skill card */
+#skills .col-md-4 {
+    display: flex;
+    align-items: stretch;
+}
+
+.skill-card {
+    flex: 1;
+    min-height: 230px;
+    background-color: #F0F4FA;
+    border-left: 5px solid #0A2647;
+    border-radius: 12px;
+    padding: 15px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    transition: 0.3s ease;
+}
+
+.dark-mode .skill-card {
+    background-color: #1F2937;
+    border-color: #4CC9F0;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.skill-card h5 {
+    margin-bottom: 10px !important;
+}
+
+.skill-card ul {
+    padding-left: 18px !important;
+    margin: 0 !important;
+}
+
+.skill-card ul li {
+    margin-bottom: 4px !important;
+}
+
+/* ======================================
+   PROJECTS
+====================================== */
+
+#projects {
+    background-color: #E7E4DF;
+}
+
+.dark-mode #projects {
+    background-color: #111827;
+}
+
+.project-card {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding: 22px;
+    border-radius: 12px;
+    background-color: #F0F4FA;
+    transition: 0.3s ease;
+}
+
+.dark-mode .project-card {
+    background-color: #1F2937;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.project-img {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+.dark-mode .project-thumbnail {
+    filter: brightness(0.85);
+}
+
+.project-info {
+    flex: 1;
+}
+
+/* ======================================
+   CERTIFICATE SLIDER
+====================================== */
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 10);
+    animation: scroll 22s linear infinite;
+}
+
+.slide {
+    width: 250px;
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.slide img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 5)); }
+}
+
+.dark-mode .slide img {
+    filter: brightness(0.85);
+}
+
+/* ======================================
+   POPUP
+====================================== */
+
+.image-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.image-popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    animation: zoomIn 0.4s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.4); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.close-popup {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.close-popup:hover {
+    color: #F4C430;
+}
+
+/* ======================================
+   CONTACT SECTION
+====================================== */
+
+#contact {
+    background-color: #E7E4DF;
+}
+
+.dark-mode #contact {
+    background-color: #111827;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+/* Outer box */
+.contact-outer-box {
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #dcdcdc;
+}
+
+.dark-mode .contact-outer-box {
+    background: #0F172A;
+    border-color: #334155;
+}
+
+/* Inner boxes */
+.inner-box {
+    background: #F0F4FA;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid #d8d8d8;
+    height: 100%;
+}
+
+.dark-mode .inner-box {
+    background: #1F2937;
+    border-color: #334155;
+}
+
+/* Contact list */
+.contact-link-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.contact-link-item i {
+    font-size: 20px;
+    color: #0A2647;
+}
+
+.dark-mode .contact-link-item i {
+    color: #F4C430;
+}
+
+.contact-link-item a {
+    color: #0A2647;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.contact-link-item a:hover {
+    text-decoration: underline;
+}
+
+.dark-mode .contact-link-item a {
+    color: #E7E4DF !important;
+}
+
+/* Contact Image */
+.contact-image-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-image {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
+
+.dark-mode .contact-image {
+    filter: brightness(0.95);
+}
+
+/* ======================================
+   FOOTER
+====================================== */
+
+footer {
+    background-color: #07182F;
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: #000814;
+}
+/* ============================
+   GO TO TOP BUTTON
+============================ */
+
+#goTopBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    background: #0A2647;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 2000;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+}
+
+#goTopBtn:hover {
+    background: #F4C430;
+    color: #0A2647;
+}
+
+/* Show button when scrolled */
+#goTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Dark mode support */
+.dark-mode #goTopBtn {
+    background: #F4C430;
+    color: #111827;
+}
+
+.dark-mode #goTopBtn:hover {
+    background: white;
+    color: #0A2647;
+}
